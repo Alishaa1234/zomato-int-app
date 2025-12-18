@@ -23,12 +23,12 @@ const UserRegister = () => {
             password
         },
         {
-            withCredentials: true
+            withCredentials: true // to include cookies in the request
         })
 
-        console.log(response.data);
+        console.log(response.data); // Debugging purpose
 
-        navigate("/")
+        navigate("/") // Redirect to home after successful registration
 
     };
 

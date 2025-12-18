@@ -5,11 +5,13 @@ import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 
 const FoodPartnerRegister = () => {
+    // navigation hook
 
   const navigate = useNavigate();
   
   const handleSubmit = (e) => { 
     e.preventDefault();
+    // collect form data
 
     const businessName = e.target.businessName.value;
     const contactName = e.target.contactName.value;
