@@ -11,9 +11,10 @@ const cors = require('cors');
 
 const app = express();
 app.use(cors({
-    origin: "http://localhost:5173",
+    origin: ["http://localhost:5173", "http://localhost:5174"],
     credentials: true
 }));
+
 app.use(cookieParser());
 app.use(express.json()); // helps to get data in req.body
 // a middleware
